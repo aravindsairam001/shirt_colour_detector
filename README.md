@@ -33,7 +33,6 @@ shirt-gender-detection/
 ├── detection/
 │   ├── segment_humans.py            # YOLOv5 person detection
 │   ├── detect_shirt_colour.py       # GrabCut and mask creation
-│   ├── app.py          	     
 │   └── gender_detector.py           # Caffe model-based gender detection
 ├── models/
 │   ├── yolov5su.pt
