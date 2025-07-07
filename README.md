@@ -54,28 +54,22 @@ shirt-gender-detection/
 
 📦 Models Used
 
-🔍 1. Person Detection – YOLOv5s (Ultralytics)
-	* Model: yolov5su.pt (optimized for fast person detection)
- 	* Source: Ultralytics YOLOv5
+1. Person Detection – YOLOv5s (Ultralytics)
+   	* Model: yolov5su.pt (optimized for fast person detection)
+   	* Source: Ultralytics YOLOv5
+2. Shirt Segmentation – GrabCut Algorithm 
+	* Library: OpenCV
+	* Technique: Uses bounding box & edge detection to isolate upper body
+3. Shirt Color Detection – KMeans + XKCD
+	* Libraries: scikit-learn, webcolors
+	* Color Mapping: Closest name match from XKCD dataset
+4. Face Detection – OpenCV DNN
+	* Model: deploy.prototxt, res10_300x300_ssd_iter_140000.caffemode
+5. Gender Classification – CaffeNet
+	* Model: deploy_gender.prototxt, gender_net.caffemodel
+	* utput: 'Male' or 'Female' with confidence filter
 
-🧍 2. Shirt Segmentation – GrabCut Algorithm
-	•	Library: OpenCV
-	•	Technique: Uses bounding box & edge detection to isolate upper body
-
-🎨 3. Shirt Color Detection – KMeans + XKCD
-	•	Libraries: scikit-learn, webcolors
-	•	Color Mapping: Closest name match from XKCD dataset
-
-🙂 4. Face Detection – OpenCV DNN
-	•	Model:
-	•	deploy.prototxt
-	•	res10_300x300_ssd_iter_140000.caffemodel
-
-🚻 5. Gender Classification – CaffeNet
-	•	Model:
-	•	deploy_gender.prototxt
-	•	gender_net.caffemodel
-	•	Output: 'Male' or 'Female' with confidence filter
+---
 
 🛠️ Installation
 
@@ -84,15 +78,19 @@ git clone https://github.com/your-username/shirt-gender-detection.git
 cd shirt-gender-detection
 pip install -r requirements.txt
 ```
+---
 
 ▶️ Run the App
 ```bash
 streamlit run app.py
 ```
+---
 
 Future Improvements
-	•	Age detection
-	•	Shirt pattern recognition
+	* Age detection
+ 	* Shirt pattern recognition
+
+---
 
 🙌 Acknowledgements
 	•	Ultralytics YOLOv5
