@@ -55,8 +55,8 @@ shirt-gender-detection/
 📦 Models Used
 
 🔍 1. Person Detection – YOLOv5s (Ultralytics)
-	 - Model: yolov5su.pt (optimized for fast person detection)
- 	 - Source: Ultralytics YOLOv5
+	- Model: yolov5su.pt (optimized for fast person detection)
+ 	- Source: Ultralytics YOLOv5
 
 🧍 2. Shirt Segmentation – GrabCut Algorithm
 	•	Library: OpenCV
