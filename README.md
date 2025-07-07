@@ -87,13 +87,14 @@ streamlit run app.py
 ---
 
 Future Improvements
-	* Age detection
- 	* Shirt pattern recognition
+
+- Age Detection
+- Shirt Patter Recognition
 
 ---
 
 🙌 Acknowledgements
-	•	Ultralytics YOLOv5
-	•	OpenCV DNN & GrabCut
-	•	XKCD Color Survey
-	•	Caffe Gender Net (by Gil Levi & Tal Hassner)
+- Ultralytics YOLOv5
+- OpenCV DNN & GrabCut
+- XKCD Color Survey
+- Caffe Gender Net (by Gil Levi & Tal Hassner)
