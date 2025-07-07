@@ -31,20 +31,17 @@ Upload an image and get:
 shirt-gender-detection/
 ├── app.py                            # Streamlit UI
 ├── detection/
-│   ├── person_detector.py           # YOLOv5 person detection
-│   ├── shirt_segmentation.py        # GrabCut and mask creation
-│   ├── color_classifier.py          # KMeans and XKCD mapping
-│   ├── face_cropper.py              # OpenCV face detection
-│   └── gender_classifier.py         # Caffe model-based gender detection
+│   ├── segment_humans.py            # YOLOv5 person detection
+│   ├── detect_shirt_colour.py       # GrabCut and mask creation
+│   ├── app.py          	     
+│   └── gender_detector.py           # Caffe model-based gender detection
 ├── models/
 │   ├── yolov5su.pt
 │   ├── res10_300x300_ssd_iter_140000.caffemodel
 │   ├── deploy.prototxt
 │   ├── gender_net.caffemodel
 │   └── deploy_gender.prototxt
-├── utils/
-│   ├── color_names.csv              # XKCD color map
-│   └── helpers.py                   # Color conversion, visualization
+├── utils.py
 ├── recordings/
 │   └── (Optional) saved outputs
 ├── requirements.txt
